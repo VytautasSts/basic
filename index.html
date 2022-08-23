@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Forma</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Payment form</h1>
+  <p class="asterisk">Required fields are followed by</p><p>.</p>
+  <form action="payment.html" method="POST">
+    <h2>Contact information:</h2>
+    <fieldset class="title">
+      <legend>Title</legend>
+        <div class="title">
+          <input type="radio" name="title"/><label>Mr</label><br>
+          <input type="radio" name="title"/><label>Ms</label><br>
+          <input type="radio" name="title"/><label>Mrs</label><br>
+        </div>
+    </fieldset>
+    <fieldset class="contactinfo">
+    <p>
+      <label class="asterisk">Name : <input type="text" autofocus required/></label>
+    </p>
+    <p>
+      <label class="asterisk">E-mail : <input id="email" type="email" autofocus required/></label>
+    </p>
+    <p>
+      <label class="asterisk">Password : <input type="password" autofocus required/></label>
+    </p>
+  </fieldset>
+  <h2>Payment information:</h2>
+  <p>
+  <fieldset class="paymentinfo">
+    <label>Card type : <select name="card" id="card" autofocus required>
+      <option value="" hidden></option>
+      <option value="Visa">Visa</option>
+      <option value="Mastercard">Mastercard</option>
+      <option value="Maestro">Maestro</option>
+    </select>
+    </p>
+    <p>
+      <label class="asterisk">Card number : <input type="text" autofocus required maxlength="16"/></label>
+    </p>
+    <p>
+      <label class="asterisk">Expiration date : <input type="date" format="dd/mm/yy" autofocus required/></label><br>
+      <sup id="sup">formatted as mm/yy</sup>
+    </p>
+  </fieldset>
+  <fieldset class="finalize">
+    <button class ="submit" type="submit">Validate the payment</button>
+  </fieldset>
+  </form>
+</body>
+</html>

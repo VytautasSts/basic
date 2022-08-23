@@ -1,0 +1,55 @@
+html{
+    max-width:fit-content;
+    padding: auto;
+    margin:auto;
+    text-align:right;
+}
+h1, h2{
+    text-align:left;
+}
+body{
+    padding:2px 10px 2px 10px;
+    border: 2px solid rgba(199, 198, 198, 0.719);
+    border-radius: 20px;
+}
+.title{
+    display:inline-block;
+    position:right;
+    width:40%;
+    text-align:left;
+    margin-right:20px;
+}
+.asterisk::after{
+    content:'*';
+    color:red;
+    font-weight:4px;
+}
+p.asterisk{
+    text-align:left;
+}
+.contactinfo{
+    border:none;
+}
+.paymentinfo{
+    text-align:right;
+    border:none;
+}
+.paymentinfo input, .paymentinfo select, .contactinfo input{
+    width:50%;
+}
+.paymentinfo select {
+    margin-right:20px;
+}
+#sup {
+    margin:0 60% 0 0;
+    display:inline-block;
+    font-style:italic;
+}
+.finalize{
+    border:none;
+    text-align:center;
+
+}
+.submit{
+    width:fit-content;
+}
